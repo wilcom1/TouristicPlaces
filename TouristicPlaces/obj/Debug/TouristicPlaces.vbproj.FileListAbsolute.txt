@@ -1,0 +1,8 @@
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\bin\TouristicPlaces.dll
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\bin\TouristicPlaces.pdb
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\bin\TouristicPlaces.xml
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\obj\Debug\TouristicPlaces.Resources.resources
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\obj\Debug\TouristicPlaces.vbproj.GenerateResource.Cache
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\obj\Debug\TouristicPlaces.dll
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\obj\Debug\TouristicPlaces.xml
+C:\Users\WILMERMANUEL\Documents\Visual Studio 2010\Projects\TouristicPlacesGit\TouristicPlaces\TouristicPlaces\obj\Debug\TouristicPlaces.pdb

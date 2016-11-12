@@ -8,6 +8,6 @@
         Acerca de
     </h2>
     <p>
-        Coloque contenido aquí.
+        Esta es una aplicación desarrollada por el grupo colaborativo 5 del curso de Visual Basic Avanzado - 405021.
     </p>
 </asp:Content>
