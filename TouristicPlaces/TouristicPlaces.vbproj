@@ -96,6 +96,7 @@
     <Content Include="App_Data\act8_u3_db_log.ldf">
       <DependentUpon>act8_u3_db.mdf</DependentUpon>
     </Content>
+    <Content Include="hotelescostos.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -155,6 +156,13 @@
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="hotelescostos.aspx.designer.vb">
+      <DependentUpon>hotelescostos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="hotelescostos.aspx.vb">
+      <DependentUpon>hotelescostos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
