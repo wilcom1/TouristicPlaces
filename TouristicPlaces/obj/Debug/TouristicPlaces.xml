@@ -6,7 +6,31 @@ TouristicPlaces
 </name>
 </assembly>
 <members>
-<member name="F:TouristicPlaces.ChangePassword.ChangeUserPassword">
+<member name="F:TouristicPlaces.hotelescostos.GridView1">
+	<summary>
+Control GridView1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.hotelescostos.SqlDataSource1">
+	<summary>
+Control SqlDataSource1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.hotelescostos.act8_u3_db">
+	<summary>
+Control act8_u3_db.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.ChangePassword.ChangeUserPassword">
 	<summary>
 Control ChangeUserPassword.
 </summary>
