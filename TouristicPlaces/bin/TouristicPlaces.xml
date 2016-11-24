@@ -6,9 +6,33 @@ TouristicPlaces
 </name>
 </assembly>
 <members>
-<member name="F:TouristicPlaces.ChangePassword.ChangeUserPassword">
+<member name="F:TouristicPlaces.Site.HeadContent">
 	<summary>
-Control ChangeUserPassword.
+Control HeadContent.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.Site.HeadLoginView">
+	<summary>
+Control HeadLoginView.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.Site.NavigationMenu">
+	<summary>
+Control NavigationMenu.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.Site.MainContent">
+	<summary>
+Control MainContent.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -151,38 +175,6 @@ Control act8_u3_db.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:TouristicPlaces.Site.HeadContent">
-	<summary>
-Control HeadContent.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.Site.HeadLoginView">
-	<summary>
-Control HeadLoginView.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.Site.NavigationMenu">
-	<summary>
-Control NavigationMenu.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.Site.MainContent">
-	<summary>
-Control MainContent.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
 </member><member name="F:TouristicPlaces.Login.RegisterHyperLink">
 	<summary>
 Control RegisterHyperLink.
@@ -210,6 +202,14 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </member><member name="F:TouristicPlaces.Register.RegisterUserWizardStep">
 	<summary>
 Control RegisterUserWizardStep.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:TouristicPlaces.ChangePassword.ChangeUserPassword">
+	<summary>
+Control ChangeUserPassword.
 </summary>
 	<remarks>
 Campo generado automáticamente.

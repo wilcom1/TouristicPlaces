@@ -33,8 +33,12 @@
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Página principal"/>
+                        <asp:MenuItem NavigateUrl="~/hoteles.aspx" Text="Hoteles" Value="Hoteles">
+                        </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/lugarescostos.aspx" Text="Lugar Costo" 
                             Value="Lugar Costo"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/especialidad.aspx" Text="Especialidades" Value="Especialidades"></asp:MenuItem>
+                         <asp:MenuItem NavigateUrl="~/clasificacion.aspx" Text="Clasificacion" Value="Clasificacion"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/HotelesCostos/hotelescostos.aspx" Text="Hoteles-Costos"/>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
                     </Items>
