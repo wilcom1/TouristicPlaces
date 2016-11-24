@@ -9,9 +9,7 @@
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
-        Dim consulta As String
         query.setFilterQuery(TextBoxCountry.Text, TextBoxCity.Text, CDbl(TextBoxCost.Text))
-        consulta = query.getFilteredQuery
+        SqlDataSource1.SelectCommand = query.getFilteredQuery
     End Sub
 End Class
