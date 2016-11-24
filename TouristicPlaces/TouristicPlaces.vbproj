@@ -96,7 +96,8 @@
     <Content Include="App_Data\act8_u3_db_log.ldf">
       <DependentUpon>act8_u3_db.mdf</DependentUpon>
     </Content>
-    <Content Include="hotelescostos.aspx" />
+    <Content Include="HotelesCostos\hotelescostos.aspx" />
+    <Content Include="lugarescostos.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -157,11 +158,19 @@
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="hotelescostos.aspx.designer.vb">
+    <Compile Include="HotelesCostos\hotelescostos.aspx.designer.vb">
       <DependentUpon>hotelescostos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="hotelescostos.aspx.vb">
+    <Compile Include="HotelesCostos\hotelescostos.aspx.vb">
       <DependentUpon>hotelescostos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="HotelesCostos\Query.vb" />
+    <Compile Include="lugarescostos.aspx.designer.vb">
+      <DependentUpon>lugarescostos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lugarescostos.aspx.vb">
+      <DependentUpon>lugarescostos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -212,7 +221,10 @@
     </None>
     <Content Include="Site.Master" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_GlobalResources\" />
+    <Folder Include="App_Themes\Tema1\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
