@@ -14,7 +14,7 @@
                 <td>    
                     <asp:DropDownList ID="DropDownListCountry" runat="server" 
                         DataSourceID="SqlDataSourcePaises" DataTextField="pais" 
-                        DataValueField="id_pais">
+                        DataValueField="pais">
                         <asp:ListItem Value="null">Seleccione...</asp:ListItem>
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSourcePaises" runat="server" 
@@ -31,10 +31,17 @@
                     <asp:Label ID="Label2" Text="Seleccione ciudad" runat="server"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBoxCity" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator id="RequiredFieldValidatorCity" runat="server"
-                        ControlToValidate="TextBoxCity"
-                        ErrorMessage="Debe diligenciar una ciudad"
+                    <asp:DropDownList ID="DropDownListCities" runat="server" 
+                        DataSourceID="SqlDataSourceCiudad" DataTextField="ciudad" 
+                        DataValueField="ciudad">
+                        <asp:ListItem Value="null">Seleccione...</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSourceCiudad" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                        SelectCommand="SELECT [id_ciudad], [ciudad], [region], [id_pais] FROM [ciudades]">
+                    </asp:SqlDataSource>
+                    <asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="DropDownListCountry"
                         ForeColor="Red">
                     </asp:RequiredFieldValidator>
                 </td>

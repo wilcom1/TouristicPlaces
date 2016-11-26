@@ -11,7 +11,7 @@
     End Sub
 
     Protected Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        query.setFilterQuery(DropDownListCountry.SelectedValue, TextBoxCity.Text, CDbl(TextBoxCost.Text))
+        query.setFilterQuery(DropDownListCountry.SelectedValue, DropDownListCities.SelectedValue, CDbl(TextBoxCost.Text))
         SqlDataSource1.SelectCommand = query.getFilteredQuery
     End Sub
 End Class
