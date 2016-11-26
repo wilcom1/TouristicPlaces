@@ -11,11 +11,17 @@
                 <td>
                     <asp:Label ID="Label1" Text="Seleccione país" runat="server"></asp:Label>
                 </td>
-                <td>
-                    <asp:TextBox ID="TextBoxCountry" runat="server"></asp:TextBox>
+                <td>    
+                    <asp:DropDownList ID="DropDownListCountry" runat="server" 
+                        DataSourceID="SqlDataSourcePaises" DataTextField="pais" 
+                        DataValueField="id_pais">
+                        <asp:ListItem Value="null">Seleccione...</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSourcePaises" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                        SelectCommand="SELECT * FROM [paises]"></asp:SqlDataSource>
                     <asp:RequiredFieldValidator id="RequiredFieldValidatorCountry" runat="server"
-                        ControlToValidate="TextBoxCountry"
-                        ErrorMessage="Debe diligenciar un país"
+                        ControlToValidate="DropDownListCountry"
                         ForeColor="Red">
                     </asp:RequiredFieldValidator>
                 </td>
