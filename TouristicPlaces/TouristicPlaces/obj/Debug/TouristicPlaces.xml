@@ -119,6 +119,14 @@ btnBuscarXCiudad control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:TouristicPlaces.hoteles.lblPaisOCiudad">
+	<summary>
+lblPais control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:TouristicPlaces.hoteles.dgvResultados">
 	<summary>
 dgvResultados control.

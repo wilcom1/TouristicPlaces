@@ -16,8 +16,7 @@
         .style4
         {
             text-align: center;
-            width: 469px;
-        }
+            }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
@@ -41,6 +40,11 @@
             </td>
             <td class="style3">
                 <asp:Button ID="btnBuscarXCiudad" runat="server" Text="Buscar por Ciudad" />
+            </td>
+        </tr>
+        <tr>
+            <td class="style4" colspan="2">
+                <asp:Label ID="lblPaisOCiudad" runat="server"></asp:Label>
             </td>
         </tr>
         <tr>
