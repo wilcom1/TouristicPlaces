@@ -96,6 +96,7 @@
     <Content Include="App_Data\act8_u3_db_log.ldf">
       <DependentUpon>act8_u3_db.mdf</DependentUpon>
     </Content>
+    <Content Include="especialidad.aspx" />
     <Content Include="hoteles.aspx" />
     <Content Include="hotelescostos.aspx" />
     <Content Include="images\homepage.png" />
@@ -158,6 +159,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="especialidad.aspx.designer.vb">
+      <DependentUpon>especialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="especialidad.aspx.vb">
+      <DependentUpon>especialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
