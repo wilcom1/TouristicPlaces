@@ -96,6 +96,7 @@
     <Content Include="App_Data\act8_u3_db_log.ldf">
       <DependentUpon>act8_u3_db.mdf</DependentUpon>
     </Content>
+    <Content Include="clasificacion.aspx" />
     <Content Include="especialidad.aspx" />
     <Content Include="hoteles.aspx" />
     <Content Include="hotelescostos.aspx" />
@@ -152,6 +153,13 @@
     <Compile Include="Account\Register.aspx.vb">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="clasificacion.aspx.designer.vb">
+      <DependentUpon>clasificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clasificacion.aspx.vb">
+      <DependentUpon>clasificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
