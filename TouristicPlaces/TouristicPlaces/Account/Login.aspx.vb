@@ -5,4 +5,7 @@
         RegisterHyperLink.NavigateUrl = "Register.aspx?ReturnUrl=" + HttpUtility.UrlEncode(Request.QueryString("ReturnUrl"))
     End Sub
 
+    Protected Sub LoginButton_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class
