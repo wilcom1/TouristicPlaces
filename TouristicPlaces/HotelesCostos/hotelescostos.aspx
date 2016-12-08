@@ -11,11 +11,17 @@
                 <td>
                     <asp:Label ID="Label1" Text="Seleccione país" runat="server"></asp:Label>
                 </td>
-                <td>
-                    <asp:TextBox ID="TextBoxCountry" runat="server"></asp:TextBox>
+                <td>    
+                    <asp:DropDownList ID="DropDownListCountry" runat="server" 
+                        DataSourceID="SqlDataSourcePaises" DataTextField="pais" 
+                        DataValueField="pais">
+                        <asp:ListItem Value="null">Seleccione...</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSourcePaises" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                        SelectCommand="SELECT * FROM [paises]"></asp:SqlDataSource>
                     <asp:RequiredFieldValidator id="RequiredFieldValidatorCountry" runat="server"
-                        ControlToValidate="TextBoxCountry"
-                        ErrorMessage="Debe diligenciar un país"
+                        ControlToValidate="DropDownListCountry"
                         ForeColor="Red">
                     </asp:RequiredFieldValidator>
                 </td>
@@ -25,10 +31,17 @@
                     <asp:Label ID="Label2" Text="Seleccione ciudad" runat="server"></asp:Label>
                 </td>
                 <td>
-                    <asp:TextBox ID="TextBoxCity" runat="server"></asp:TextBox>
-                    <asp:RequiredFieldValidator id="RequiredFieldValidatorCity" runat="server"
-                        ControlToValidate="TextBoxCity"
-                        ErrorMessage="Debe diligenciar una ciudad"
+                    <asp:DropDownList ID="DropDownListCities" runat="server" 
+                        DataSourceID="SqlDataSourceCiudad" DataTextField="ciudad" 
+                        DataValueField="ciudad">
+                        <asp:ListItem Value="null">Seleccione...</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSourceCiudad" runat="server" 
+                        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+                        SelectCommand="SELECT [id_ciudad], [ciudad], [region], [id_pais] FROM [ciudades]">
+                    </asp:SqlDataSource>
+                    <asp:RequiredFieldValidator id="RequiredFieldValidator1" runat="server"
+                        ControlToValidate="DropDownListCountry"
                         ForeColor="Red">
                     </asp:RequiredFieldValidator>
                 </td>

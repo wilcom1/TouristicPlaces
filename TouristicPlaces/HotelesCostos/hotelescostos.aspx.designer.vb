@@ -23,13 +23,22 @@ Partial Public Class hotelescostos
     Protected WithEvents Label1 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control TextBoxCountry.
+    '''Control DropDownListCountry.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBoxCountry As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DropDownListCountry As Global.System.Web.UI.WebControls.DropDownList
+
+    '''<summary>
+    '''Control SqlDataSourcePaises.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents SqlDataSourcePaises As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
     '''Control RequiredFieldValidatorCountry.
@@ -50,22 +59,31 @@ Partial Public Class hotelescostos
     Protected WithEvents Label2 As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
-    '''Control TextBoxCity.
+    '''Control DropDownListCities.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents TextBoxCity As Global.System.Web.UI.WebControls.TextBox
+    Protected WithEvents DropDownListCities As Global.System.Web.UI.WebControls.DropDownList
 
     '''<summary>
-    '''Control RequiredFieldValidatorCity.
+    '''Control SqlDataSourceCiudad.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents RequiredFieldValidatorCity As Global.System.Web.UI.WebControls.RequiredFieldValidator
+    Protected WithEvents SqlDataSourceCiudad As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''Control RequiredFieldValidator1.
+    '''</summary>
+    '''<remarks>
+    '''Campo generado automáticamente.
+    '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+    '''</remarks>
+    Protected WithEvents RequiredFieldValidator1 As Global.System.Web.UI.WebControls.RequiredFieldValidator
 
     '''<summary>
     '''Control Label3.
