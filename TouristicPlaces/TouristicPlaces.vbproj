@@ -96,9 +96,22 @@
     <Content Include="App_Data\act8_u3_db_log.ldf">
       <DependentUpon>act8_u3_db.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\ASPNETDB.MDF" />
+    <Content Include="App_Data\aspnetdb_log.ldf">
+      <DependentUpon>ASPNETDB.MDF</DependentUpon>
+    </Content>
+    <Content Include="bin\TouristicPlaces.dll" />
+    <Content Include="bin\TouristicPlaces.pdb" />
+    <Content Include="bin\TouristicPlaces.xml" />
     <Content Include="hoteles.aspx" />
     <Content Include="HotelesCostos\hotelescostos.aspx" />
+    <Content Include="images\homepage.png" />
     <Content Include="lugarescostos.aspx" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Debug\TouristicPlaces.dll" />
+    <Content Include="obj\Debug\TouristicPlaces.pdb" />
+    <Content Include="obj\Debug\TouristicPlaces.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TouristicPlaces.xml" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
@@ -215,6 +228,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\TouristicPlaces.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
@@ -228,6 +242,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <Content Include="Site.Master" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\TouristicPlaces.vbproj.GenerateResource.Cache" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_GlobalResources\" />
