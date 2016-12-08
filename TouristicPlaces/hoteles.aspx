@@ -50,7 +50,18 @@
         <tr>
             <td class="style2" colspan="2">
                 <asp:GridView ID="dgvResultados" runat="server" Height="139px" 
-                    style="text-align: center" Width="934px">
+                    style="text-align: center" Width="934px" AutoGenerateColumns="false">
+                    <Columns>
+                            
+                        <asp:HyperLinkField HeaderText="Reservar" DataTextField="id_lugar" DataNavigateUrlFields="id_lugar" DataTextFormatString="Reserva ahora" 
+                             DataNavigateUrlFormatString="~/reservas.aspx?id_lugar={0}" 
+                             />
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" />
+                        <asp:BoundField DataField="www" HeaderText="www"/>
+                        <asp:BoundField DataField="telefono" HeaderText="telefono" />
+                        <asp:BoundField DataField="direccion" HeaderText="direccion"/>
+                        <asp:BoundField DataField="ciudad" HeaderText="ciudad" />  
+                    </Columns>
                 </asp:GridView>
             </td>
         </tr>

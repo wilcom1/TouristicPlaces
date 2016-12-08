@@ -100,11 +100,13 @@
     <Content Include="App_Data\aspnetdb_log.ldf">
       <DependentUpon>ASPNETDB.MDF</DependentUpon>
     </Content>
+    <Content Include="app_offline1.htm" />
     <Content Include="bin\TouristicPlaces.dll" />
     <Content Include="bin\TouristicPlaces.pdb" />
-    <Content Include="bin\TouristicPlaces.xml" />
+    <Content Include="clasificacion.aspx" />
+    <Content Include="especialidad.aspx" />
     <Content Include="hoteles.aspx" />
-    <Content Include="HotelesCostos\hotelescostos.aspx" />
+    <Content Include="hotelescostos.aspx" />
     <Content Include="images\homepage.png" />
     <Content Include="lugarescostos.aspx" />
     <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
@@ -112,13 +114,16 @@
     <Content Include="obj\Debug\TouristicPlaces.pdb" />
     <Content Include="obj\Debug\TouristicPlaces.vbproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\TouristicPlaces.xml" />
+    <Content Include="reservas.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -162,12 +167,26 @@
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="clasificacion.aspx.designer.vb">
+      <DependentUpon>clasificacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="clasificacion.aspx.vb">
+      <DependentUpon>clasificacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Default.aspx.vb">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="especialidad.aspx.designer.vb">
+      <DependentUpon>especialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="especialidad.aspx.vb">
+      <DependentUpon>especialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
@@ -177,16 +196,15 @@
     </Compile>
     <Compile Include="hoteles.aspx.vb">
       <DependentUpon>hoteles.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HotelesCostos\hotelescostos.aspx.designer.vb">
+    <Compile Include="hotelescostos.aspx.designer.vb">
       <DependentUpon>hotelescostos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HotelesCostos\hotelescostos.aspx.vb">
+    <Compile Include="hotelescostos.aspx.vb">
       <DependentUpon>hotelescostos.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="HotelesCostos\Query.vb" />
     <Compile Include="lugarescostos.aspx.designer.vb">
       <DependentUpon>lugarescostos.aspx</DependentUpon>
     </Compile>
@@ -213,6 +231,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="reservas.aspx.designer.vb">
+      <DependentUpon>reservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reservas.aspx.vb">
+      <DependentUpon>reservas.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Site.Master.designer.vb">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
@@ -232,6 +257,53 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\Web.config" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\06\ac92b2b9c6c97ee79ea5c647007d0185d5ee51" />
+    <None Include=".git\objects\08\4629e9cb16572d869767dbed8d316c00708a1a" />
+    <None Include=".git\objects\11\b82ef06769f713628911f8667597464ae4b8fe" />
+    <None Include=".git\objects\1e\0314e2604bca2d64b8f4489b1580d2ede9d6db" />
+    <None Include=".git\objects\31\adacfdba1d85ead6960e63303597752138c9a6" />
+    <None Include=".git\objects\42\da4b88f65cb9f039ceb22515b4dcba5284b502" />
+    <None Include=".git\objects\4d\2f6f84ba06b310758c1baf28d69d5f226ef163" />
+    <None Include=".git\objects\62\b9d8b1bd9e7206b82e71becab246f63dd2e7e9" />
+    <None Include=".git\objects\6f\3578c54dbaa61c4f897d3876903bfb9b86d822" />
+    <None Include=".git\objects\7e\93de84c9df26150fa80617e65711a4bdf550c0" />
+    <None Include=".git\objects\88\7fae3fcca9603aaf0358f5c1760b23a1592bad" />
+    <None Include=".git\objects\9d\65f9888c400be7c4a1b74692bbb835466e9eec" />
+    <None Include=".git\objects\a9\6df2ca405c6e5a0c5ecd3d9ec86c5b6b9b6605" />
+    <None Include=".git\objects\b5\92c82c023e86f7aca33a3019aa4deb48b2f69e" />
+    <None Include=".git\objects\c9\f3083284bf80ab31029c3a8fc8ed61bfa55d2d" />
+    <None Include=".git\objects\d5\27894f4fb160df973ab74415ff09a0d4962336" />
+    <None Include=".git\objects\de\1112272860b5f107c494a837463f0a1cd5876c" />
+    <None Include=".git\objects\ee\3c1df519d8d8a2d1e8eb3848daec266f511b2e" />
+    <None Include=".git\objects\fb\c6dde4aa9ecd2d20d4e101d05d867c6eb9578b" />
+    <None Include=".git\objects\pack\pack-90a2dfd39b88dbbbb04906fbc902640eab60e00f.idx" />
+    <None Include=".git\objects\pack\pack-90a2dfd39b88dbbbb04906fbc902640eab60e00f.pack" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".git\refs\remotes\origin\master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -247,6 +319,8 @@
     <None Include="obj\Debug\TouristicPlaces.vbproj.GenerateResource.Cache" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
     <Folder Include="App_GlobalResources\" />
     <Folder Include="App_Themes\Tema1\" />
   </ItemGroup>

@@ -37,9 +37,13 @@
                         </asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/lugarescostos.aspx" Text="Lugar Costo" 
                             Value="Lugar Costo"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/especialidad.aspx" Text="Especialidades" Value="Especialidades"></asp:MenuItem>
-                         <asp:MenuItem NavigateUrl="~/clasificacion.aspx" Text="Clasificacion" Value="Clasificacion"></asp:MenuItem>
-                        <asp:MenuItem NavigateUrl="~/HotelesCostos/hotelescostos.aspx" Text="Hoteles-Costos"/>
+                        <asp:MenuItem NavigateUrl="~/especialidad.aspx" Text="Especialidades" 
+                            Value="Especialidades"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/clasificacion.aspx" Text="Clasificacion" 
+                            Value="Clasificacion"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/hotelescostos.aspx" Text="Hoteles-Costos"/>
+                        <asp:MenuItem NavigateUrl="~/reservas.aspx" Text="Reservaciones" 
+                            Value="Reservaciones"></asp:MenuItem>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca de"/>
                     </Items>
                 </asp:Menu>
@@ -52,6 +56,7 @@
         </div>
     </div>
     <div class="footer">
+        
     </div>
     </form>
 </body>

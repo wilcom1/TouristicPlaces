@@ -60,6 +60,11 @@ Public Class hoteles
         lblPaisOCiudad.Text = "Hoteles en " + paistext
         'obtenga los resultados de la funcion y muestrelos en el gridview
         dgvResultados.DataSource = obtengalatablacondatosxPais(paisid)
+        
+
+
+
+
         dgvResultados.DataBind()
 
     End Sub
@@ -74,7 +79,7 @@ Public Class hoteles
 
         'comando de base de datos a ejecutar
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT nombre, pagina_web as www, telefono, direccion, ciudad FROM lugares " &
+        sqlCmd.CommandText = "SELECT id_lugar, nombre, pagina_web as www, telefono, direccion, ciudad FROM lugares " &
                                 "JOIN ciudades " &
                                 "ON ciudades.id_ciudad = lugares.id_ciudad " &
                                 "WHERE " &
@@ -89,7 +94,7 @@ Public Class hoteles
         sqlAdp.SelectCommand = sqlCmd
 
         'pase el resultado de base de datos al dataset
-        sqlAdp.Fill(ds)
+        sqlAdp.Fill(ds, "hotelesEnPais")
 
 
         Return ds
@@ -104,6 +109,8 @@ Public Class hoteles
         'obtenga los resultados de la funcion y muestrelos en el gridview
         dgvResultados.DataSource = obtengalatablacondatosxCiudad(ciudadid)
         dgvResultados.DataBind()
+
+
     End Sub
 
     Private Function obtengalatablacondatosxCiudad(id As String) As DataSet
@@ -115,7 +122,7 @@ Public Class hoteles
 
         'comando de base de datos a ejecutar
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT nombre, pagina_web as www, telefono, direccion, ciudad FROM lugares " &
+        sqlCmd.CommandText = "SELECT id_lugar, nombre, pagina_web as www, telefono, direccion, ciudad FROM lugares " &
                                 "JOIN ciudades " &
                                 "ON ciudades.id_ciudad = lugares.id_ciudad " &
                                 "WHERE " &
@@ -135,4 +142,7 @@ Public Class hoteles
 
         Return ds
     End Function
+
+
+   
 End Class

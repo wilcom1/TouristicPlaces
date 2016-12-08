@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="clasificacion.aspx.vb" Inherits="TouristicPlaces.clasificacion" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="clasificacion.aspx.vb" Inherits="TouristicPlaces.clasificación" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
@@ -15,7 +15,8 @@
     </asp:DropDownList>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        SelectCommand="SELECT [caracteristica] FROM [caracteristicas]">
+        
+        SelectCommand="SELECT [caracteristica], [id_caracteristica] FROM [caracteristicas]">
     </asp:SqlDataSource>
     <asp:Button ID="Button2" runat="server" Text="Buscar por Características " />
     <br />
@@ -28,7 +29,8 @@
     </asp:DropDownList>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        SelectCommand="SELECT [especialidad] FROM [especialidades]">
+        
+        SelectCommand="SELECT [especialidad], [id_especialidad] FROM [especialidades]">
     </asp:SqlDataSource>
     <asp:Button ID="Button1" runat="server" Text="Buscar por Especialidades " />
 

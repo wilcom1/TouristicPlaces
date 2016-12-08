@@ -22,103 +22,79 @@ Control RegisterUserWizardStep.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.Label1">
+</member><member name="F:TouristicPlaces._Default.Image1">
 	<summary>
-Control Label1.
+Image1 control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.DropDownListCountry">
+</member><member name="F:TouristicPlaces.especialidad.ddpaises">
 	<summary>
-Control DropDownListCountry.
+ddpaises control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.SqlDataSourcePaises">
+</member><member name="F:TouristicPlaces.especialidad.ddciudades1">
 	<summary>
-Control SqlDataSourcePaises.
+ddciudades1 control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.RequiredFieldValidatorCountry">
+</member><member name="F:TouristicPlaces.especialidad.ddespecialidad">
 	<summary>
-Control RequiredFieldValidatorCountry.
+ddespecialidad control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.Label2">
+</member><member name="F:TouristicPlaces.especialidad.btnBuscarXPais">
 	<summary>
-Control Label2.
+btnBuscarXPais control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.DropDownListCities">
+</member><member name="F:TouristicPlaces.especialidad.btnBuscarXCiudad">
 	<summary>
-Control DropDownListCities.
+btnBuscarXCiudad control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.SqlDataSourceCiudad">
+</member><member name="F:TouristicPlaces.especialidad.btnBuscarXEspecialidad">
 	<summary>
-Control SqlDataSourceCiudad.
+btnBuscarXEspecialidad control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.RequiredFieldValidator1">
+</member><member name="F:TouristicPlaces.especialidad.lblPaisOCiudad">
 	<summary>
-Control RequiredFieldValidator1.
+lblPaisOCiudad control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.Label3">
+</member><member name="F:TouristicPlaces.especialidad.dgvResultados1">
 	<summary>
-Control Label3.
+dgvResultados1 control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.TextBoxCost">
-	<summary>
-Control TextBoxCost.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.RequiredFieldValidatorCost">
-	<summary>
-Control RequiredFieldValidatorCost.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.Button2">
-	<summary>
-Control Button2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.GridView1">
+</member><member name="F:TouristicPlaces.lugarescostos.GridView1">
 	<summary>
 Control GridView1.
 </summary>
@@ -126,73 +102,9 @@ Control GridView1.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.SqlDataSource1">
+</member><member name="F:TouristicPlaces.lugarescostos.SqlDataSource1">
 	<summary>
 Control SqlDataSource1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.hotelescostos.act8_u3_db">
-	<summary>
-Control act8_u3_db.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.Label1">
-	<summary>
-Control Label1.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.Label2">
-	<summary>
-Control Label2.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.listalugares">
-	<summary>
-Control listalugares.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.conexionlugares">
-	<summary>
-Control conexionlugares.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.Label3">
-	<summary>
-Control Label3.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.lugares">
-	<summary>
-Control lugares.
-</summary>
-	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-</remarks>
-</member><member name="F:TouristicPlaces.lugarescostos.conexondatospedidos">
-	<summary>
-Control conexondatospedidos.
 </summary>
 	<remarks>
 Campo generado automáticamente.
@@ -231,6 +143,102 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
  Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
  </summary>
 	<remarks></remarks>
+</member><member name="F:TouristicPlaces.clasificación.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.Label5">
+	<summary>
+Label5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.DropDownList1">
+	<summary>
+DropDownList1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.SqlDataSource2">
+	<summary>
+SqlDataSource2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.Button2">
+	<summary>
+Button2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.Label3">
+	<summary>
+Label3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.listaespecialidad">
+	<summary>
+listaespecialidad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.Label4">
+	<summary>
+Label4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.Resultados">
+	<summary>
+Resultados control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.clasificación.SqlDataSource3">
+	<summary>
+SqlDataSource3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
 </member><member name="F:TouristicPlaces.ChangePassword.ChangeUserPassword">
 	<summary>
 Control ChangeUserPassword.
@@ -241,51 +249,131 @@ Para modificarlo, mueva la declaración del campo del archivo del diseñador al 
 </remarks>
 </member><member name="F:TouristicPlaces.hoteles.ddpaises">
 	<summary>
-Control ddpaises.
+ddpaises control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.hoteles.ddciudades">
 	<summary>
-Control ddciudades.
+ddciudades control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.hoteles.btnBuscarXPais">
 	<summary>
-Control btnBuscarXPais.
+btnBuscarXPais control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.hoteles.btnBuscarXCiudad">
 	<summary>
-Control btnBuscarXCiudad.
+btnBuscarXCiudad control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.hoteles.lblPaisOCiudad">
 	<summary>
-Control lblPaisOCiudad.
+lblPaisOCiudad control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.hoteles.dgvResultados">
 	<summary>
-Control dgvResultados.
+dgvResultados control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.tbUserID">
+	<summary>
+tbUserID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.RequiredFieldValidator1">
+	<summary>
+RequiredFieldValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.tblugarID">
+	<summary>
+tblugarID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.RequiredFieldValidator2">
+	<summary>
+RequiredFieldValidator2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.calCheckIN">
+	<summary>
+calCheckIN control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.calCheckOUT">
+	<summary>
+calCheckOUT control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.tbNumPersonas">
+	<summary>
+tbNumPersonas control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.RequiredFieldValidator5">
+	<summary>
+RequiredFieldValidator5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.RegularExpressionValidator1">
+	<summary>
+RegularExpressionValidator1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.reservas.btnReservar">
+	<summary>
+btnReservar control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.Login.RegisterHyperLink">
 	<summary>
@@ -303,37 +391,77 @@ Control LoginUser.
 Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
-</member><member name="F:TouristicPlaces.Site.HeadContent">
+</member><member name="F:TouristicPlaces.hotelescostos.ddpaises">
 	<summary>
-Control HeadContent.
+ddpaises control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.hotelescostos.ddciudades">
+	<summary>
+ddciudades control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.hotelescostos.btnBuscarXPais">
+	<summary>
+btnBuscarXPais control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.hotelescostos.btnBuscarXCiudad">
+	<summary>
+btnBuscarXCiudad control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.hotelescostos.dgvResultados">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:TouristicPlaces.Site.HeadContent">
+	<summary>
+HeadContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.Site.HeadLoginView">
 	<summary>
-Control HeadLoginView.
+HeadLoginView control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.Site.NavigationMenu">
 	<summary>
-Control NavigationMenu.
+NavigationMenu control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member><member name="F:TouristicPlaces.Site.MainContent">
 	<summary>
-Control MainContent.
+MainContent control.
 </summary>
 	<remarks>
-Campo generado automáticamente.
-Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
 </remarks>
 </member>
 </members>
