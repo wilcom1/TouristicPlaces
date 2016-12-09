@@ -106,9 +106,9 @@
     <Content Include="clasificacion.aspx" />
     <Content Include="especialidad.aspx" />
     <Content Include="hoteles.aspx" />
-    <Content Include="hotelescostos.aspx" />
+    <Content Include="HotelesCostos\hotelescostos.aspx" />
     <Content Include="images\homepage.png" />
-    <Content Include="lugarescostos.aspx" />
+    <Content Include="lugarcosto.aspx" />
     <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
     <Content Include="obj\Debug\TouristicPlaces.dll" />
     <Content Include="obj\Debug\TouristicPlaces.pdb" />
@@ -198,19 +198,20 @@
       <DependentUpon>hoteles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="hotelescostos.aspx.designer.vb">
+    <Compile Include="HotelesCostos\hotelescostos.aspx.designer.vb">
       <DependentUpon>hotelescostos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="hotelescostos.aspx.vb">
+    <Compile Include="HotelesCostos\hotelescostos.aspx.vb">
       <DependentUpon>hotelescostos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="lugarescostos.aspx.designer.vb">
-      <DependentUpon>lugarescostos.aspx</DependentUpon>
+    <Compile Include="HotelesCostos\Query.vb" />
+    <Compile Include="lugarcosto.aspx.designer.vb">
+      <DependentUpon>lugarcosto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="lugarescostos.aspx.vb">
-      <DependentUpon>lugarescostos.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+    <Compile Include="lugarcosto.aspx.vb">
+      <DependentUpon>lugarcosto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
