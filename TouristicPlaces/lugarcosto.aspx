@@ -21,14 +21,14 @@
     <asp:Label ID="Label3" runat="server" Text="Relacion de lugares"></asp:Label>
     <br />
     <br />
-    <asp:GridView ID="lugares" runat="server" AllowSorting="True" 
+    <asp:GridView ID="lugares" runat="server" 
         AutoGenerateColumns="False" DataKeyNames="id_lugar" 
         DataSourceID="conexondatospedidos">
         <Columns>
             <asp:HyperLinkField DataNavigateUrlFields="id_lugar" 
                 DataNavigateUrlFormatString="~/reservas.aspx?id_lugar={0}" 
-                DataTextFormatString="Reserva ahora" HeaderText="Reservar" 
-                NavigateUrl="~/reservas.aspx" Text="Reservar a hora" />
+                DataTextField="id_lugar" DataTextFormatString="Reserva ahora" 
+                HeaderText="Reservar" NavigateUrl="~/reservas.aspx" Text="Reservar a hora" />
             <asp:BoundField DataField="id_lugar" HeaderText="id_lugar" ReadOnly="True" 
                 SortExpression="id_lugar" />
             <asp:BoundField DataField="nombre" HeaderText="nombre" 
