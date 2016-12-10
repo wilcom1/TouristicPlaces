@@ -70,7 +70,13 @@
         DataSourceID="SqlDataSource1" Width="100%" AllowPaging="True" 
         AllowSorting="True">
         <Columns>
-            <asp:CommandField ShowSelectButton="True" />
+            
+            <asp:HyperLinkField 
+                HeaderText="Reservar" 
+                DataTextField="id_lugar" 
+                DataNavigateUrlFields="id_lugar" 
+                DataTextFormatString="Reserva ahora" 
+                DataNavigateUrlFormatString="~/reservas.aspx?id_lugar={0}"/>
             <asp:BoundField DataField="pais" HeaderText="pais" SortExpression="pais" />
             <asp:BoundField DataField="ciudad" HeaderText="ciudad" 
                 SortExpression="ciudad" />
@@ -85,7 +91,7 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
         SelectCommand=
-        "SELECT [pais], [ciudad], [nombre], [costo_noche], [costo_persona] FROM [HotelesCostos]"></asp:SqlDataSource>
+        "SELECT [id_lugar],[pais], [ciudad], [nombre], [costo_noche], [costo_persona] FROM [HotelesCostos]"></asp:SqlDataSource>
     <asp:ObjectDataSource ID="act8_u3_db" runat="server"></asp:ObjectDataSource>
     <asp:Label Text="Encontrar Hoteles por Precio"></asp:Label>
 </asp:Content>
