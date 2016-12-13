@@ -9,61 +9,50 @@
     <br />
     <asp:Label ID="Label5" runat="server" 
         Text="Buscar por características del lugar."></asp:Label>
-    &nbsp;
-    <asp:DropDownList ID="DropDownList1" runat="server" 
-        DataSourceID="SqlDataSource2" DataTextField="caracteristica">
+    &nbsp;&nbsp;<asp:DropDownList ID="DropCaracteristica" runat="server">
     </asp:DropDownList>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        
-        SelectCommand="SELECT [caracteristica], [id_caracteristica] FROM [caracteristicas]">
-    </asp:SqlDataSource>
-    <asp:Button ID="Button2" runat="server" Text="Buscar por Características " />
+&nbsp;
+    <asp:Button ID="BCaracteristica" runat="server" 
+        Text="Buscar por Características " />
     <br />
     <asp:Label ID="Label3" runat="server" Text="Buscar por especialidad del lugar."></asp:Label>
 
-    &nbsp;
-    <asp:DropDownList ID="listaespecialidad" runat="server" 
-        DataSourceID="SqlDataSource1" DataTextField="especialidad" 
-        DataValueField="especialidad" style="margin-bottom: 0px">
+    &nbsp;<asp:DropDownList ID="Dropespecialidad" runat="server">
     </asp:DropDownList>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        
-        SelectCommand="SELECT [especialidad], [id_especialidad] FROM [especialidades]">
-    </asp:SqlDataSource>
-    <asp:Button ID="Button1" runat="server" Text="Buscar por Especialidades " />
+&nbsp;&nbsp;
+    <asp:Button ID="BEspecialidad" runat="server" 
+        Text="Buscar por Especialidades " />
 
     <br />
     <br />
 
-        <asp:Label ID="Label4" runat="server" Text="Resultado de sitios y Hoteles "></asp:Label>
+        <asp:Label ID="textconsulta" runat="server"></asp:Label>
     <br />
     <br />
-    <asp:GridView ID="Resultados" runat="server" AutoGenerateColumns="False" 
-        DataSourceID="SqlDataSource3" Visible="False" Width="723px">
-        <Columns>
-            <asp:BoundField DataField="tipo_lugar" HeaderText="tipo_lugar" 
-                SortExpression="tipo_lugar" />
-            <asp:BoundField DataField="nombre" HeaderText="nombre" 
-                SortExpression="nombre" />
-            <asp:BoundField DataField="direccion" HeaderText="direccion" 
-                SortExpression="direccion" />
-            <asp:BoundField DataField="telefono" HeaderText="telefono" 
-                SortExpression="telefono" />
-            <asp:BoundField DataField="pagina_web" HeaderText="pagina_web" 
-                SortExpression="pagina_web" />
-            <asp:BoundField DataField="clasificacion" HeaderText="clasificacion" 
-                SortExpression="clasificacion" />
-            <asp:BoundField DataField="id_especialidad" HeaderText="id_especialidad" 
-                SortExpression="id_especialidad" />
-        </Columns>
-    </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource3" runat="server" 
-        ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-        
-        SelectCommand="SELECT [tipo_lugar], [nombre], [direccion], [telefono], [pagina_web], [clasificacion], [id_especialidad] FROM [lugares]">
-    </asp:SqlDataSource>
+    <asp:GridView ID="GridResultados" runat="server" Height="139px" 
+                    style="text-align: center" Width="711px" CellPadding="4" 
+                    ForeColor="#D8D8D8" GridLines="None">
+                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+                    <EditRowStyle BackColor="#5D6D7E" />
+                                        
+                    <EmptyDataTemplate>
+                        <asp:SqlDataSource ID="conexionlugares" runat="server" 
+                            ConnectionString="<%$ ConnectionStrings:cadenaderelaciones %>" 
+                            SelectCommand="SELECT [id_especialidad], [id_lugar], [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE (([id_especialidad] = @id_especialidad))">
+                            <SelectParameters>
+                                <asp:ControlParameter ControlID="Dropespecialidad" Name="id_especialidad" 
+                                    PropertyName="SelectedValue" Type="Int32" />
+                                 </SelectParameters>
+
+                        </asp:SqlDataSource>
+                    </EmptyDataTemplate>
+                    <FooterStyle BackColor="#848484" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#848484" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+                   
+                </asp:GridView>
     <br />
     <br />
     

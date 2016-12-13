@@ -59,15 +59,28 @@
         </tr>
         <tr>
             <td class="style2" colspan="3">
-                <asp:GridView ID="dgvResultados1" runat="server" Height="139px" 
-                    style="text-align: center" Width="711px" CellPadding="4" 
-                    ForeColor="#333333" GridLines="None">
-                    <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-                    <EditRowStyle BackColor="#999999" />
+                <asp:GridView ID="dgvResultados1" runat="server" Height="98px" 
+                    style="text-align: center" Width="883px" CellPadding="4" 
+                    ForeColor="#333333" GridLines="None" AutoGenerateColumns="False">
+
+                   
+
+                    <AlternatingRowStyle BackColor="White" />
+                    <Columns>
+                        <asp:HyperLinkField DataNavigateUrlFields="id_lugar" 
+                            DataNavigateUrlFormatString="~/reservas.aspx?id_lugar={0}" 
+                            DataTextField="id_lugar" DataTextFormatString="Reserva YA" 
+                            HeaderText="Reservar" />
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" />
+                        <asp:BoundField DataField="direccion" HeaderText="direccion" />
+                        <asp:BoundField DataField="telefono" HeaderText="telefono" />
+                        <asp:BoundField DataField="pagina_web" HeaderText="pagina_web" />
+                        <asp:BoundField DataField="email" HeaderText="email" />
+                    </Columns>
                     <EmptyDataTemplate>
                         <asp:SqlDataSource ID="conexionlugares" runat="server" 
                             ConnectionString="<%$ ConnectionStrings:cadenaderelaciones %>" 
-                            SelectCommand="SELECT [id_especialidad], [id_lugar], [tipo_lugar], [nombre], [direccion], [telefono], [id_ciudad], [costo_persona], [pagina_web], [email], [costo_noche], [clasificacion] FROM [lugares] WHERE (([id_especialidad] = @id_especialidad) AND ([id_ciudad] = @id_ciudad))">
+                            SelectCommand="SELECT [id_lugar], [id_especialidad], [tipo_lugar], [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE (([id_especialidad] = @id_especialidad) AND ([id_ciudad] = @id_ciudad))">
                             <SelectParameters>
                                 <asp:ControlParameter ControlID="ddespecialidad" Name="id_especialidad" 
                                     PropertyName="SelectedValue" Type="Int32" />
@@ -76,15 +89,15 @@
                             </SelectParameters>
                         </asp:SqlDataSource>
                     </EmptyDataTemplate>
-                    <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                    <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-                    <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-                    <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
-                    <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                    <SortedAscendingCellStyle BackColor="#E9E7E2" />
-                    <SortedAscendingHeaderStyle BackColor="#506C8C" />
-                    <SortedDescendingCellStyle BackColor="#FFFDF8" />
-                    <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+                    <FooterStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <HeaderStyle BackColor="#990000" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#FFCC66" ForeColor="#333333" HorizontalAlign="Center" />
+                    <RowStyle BackColor="#FFFBD6" ForeColor="#333333" />
+                    <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" ForeColor="Navy" />
+                    <SortedAscendingCellStyle BackColor="#FDF5AC" />
+                    <SortedAscendingHeaderStyle BackColor="#4D0000" />
+                    <SortedDescendingCellStyle BackColor="#FCF6C0" />
+                    <SortedDescendingHeaderStyle BackColor="#820000" />
                 </asp:GridView>
             </td>
         </tr>

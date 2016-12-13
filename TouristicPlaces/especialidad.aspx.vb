@@ -94,7 +94,7 @@ Public Class especialidad
 
         'comando de base de datos a ejecutar
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT nombre, pagina_web as Correo, telefono, direccion, ciudad FROM lugares " &
+        sqlCmd.CommandText = "SELECT id_lugar,nombre, pagina_web as Correo, telefono, direccion, ciudad FROM lugares " &
                                 "JOIN ciudades " &
                                 "ON ciudades.id_ciudad = lugares.id_ciudad " &
                                 "WHERE " &
@@ -135,7 +135,7 @@ Public Class especialidad
 
         'comando de base de datos a ejecutar
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT nombre, pagina_web as Correo, telefono, direccion, ciudad FROM lugares " &
+        sqlCmd.CommandText = "SELECT id_lugar,nombre, pagina_web as Correo, telefono, direccion, ciudad FROM lugares " &
                                 "JOIN ciudades " &
                                 "ON ciudades.id_ciudad = lugares.id_ciudad " &
                                 "WHERE " &
@@ -182,7 +182,7 @@ Public Class especialidad
 
         'comando de base de datos a ejecutar
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT [nombre], [direccion], [telefono], [id_ciudad], [costo_persona], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_especialidad] = @id_especialidad)"
+        sqlCmd.CommandText = "SELECT [id_lugar],[nombre], [direccion], [telefono], [pagina_web], [email] FROM [lugares] WHERE ([id_especialidad] = @id_especialidad)"
         sqlCmd.Parameters.AddWithValue("@id_especialidad", id)
         sqlCmd.CommandType = CommandType.Text
         sqlCmd.Connection = sqlConn
