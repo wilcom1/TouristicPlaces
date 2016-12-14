@@ -33,26 +33,21 @@
                     style="text-align: center" Width="711px" CellPadding="4" 
                     ForeColor="#D8D8D8" GridLines="None">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
-                    <EditRowStyle BackColor="#5D6D7E" />
-                                        
-                    <EmptyDataTemplate>
-                        <asp:SqlDataSource ID="conexionlugares" runat="server" 
-                            ConnectionString="<%$ ConnectionStrings:cadenaderelaciones %>" 
-                            SelectCommand="SELECT [id_especialidad], [id_lugar], [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE (([id_especialidad] = @id_especialidad))">
-                            <SelectParameters>
-                                <asp:ControlParameter ControlID="Dropespecialidad" Name="id_especialidad" 
-                                    PropertyName="SelectedValue" Type="Int32" />
-                                 </SelectParameters>
 
-                        </asp:SqlDataSource>
-                    </EmptyDataTemplate>
+                    <Columns>
+                        <asp:HyperLinkField DataNavigateUrlFields="id_lugar" 
+                            DataNavigateUrlFormatString="~/reservas.aspx?id_lugar={0}" 
+                            DataTextField="id_lugar" DataTextFormatString="Reservar Ahora" 
+                            HeaderText="Reservar" />                        
+                    </Columns>
+                              
+                    <EditRowStyle BackColor="#5D6D7E" />                                        
                     <FooterStyle BackColor="#848484" Font-Bold="True" ForeColor="White" />
                     <HeaderStyle BackColor="#848484" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
                     <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
                     <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
-                   
-                </asp:GridView>
+                       </asp:GridView>
     <br />
     <br />
     

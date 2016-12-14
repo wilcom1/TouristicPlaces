@@ -29,7 +29,7 @@ Public Class clasificación
         Dropespecialidad.Items.Insert(0, New ListItem("--Seleccione Especialidad--", "0"))
 
     End Sub
-    Protected Sub btnBuscarXEspecialidad_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BEspecialidad.Click
+    Protected Sub BEspecialidad_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BEspecialidad.Click
 
         Dim especialidadid As String = Me.Dropespecialidad.SelectedValue.ToString
         Dim especialidadtext As String = Me.Dropespecialidad.SelectedItem.ToString()
@@ -43,18 +43,16 @@ Public Class clasificación
         Dim constr As String = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
         sqlConn.ConnectionString = constr
 
-        'SELECT [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_especialidad] = @id_especialidad)
+        'SELECT [id_lugar], [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_especialidad] = @id_especialidad)
 
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_especialidad] = @id_especialidad)"
+        sqlCmd.CommandText = "SELECT [id_lugar], [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_especialidad] = @id_especialidad)"
         sqlCmd.Parameters.AddWithValue("@id_especialidad", id)
         sqlCmd.CommandType = CommandType.Text
         sqlCmd.Connection = sqlConn
-
         Dim sqlAdp As New SqlDataAdapter
         sqlAdp.SelectCommand = sqlCmd
         sqlAdp.Fill(ds)
-
         Return ds
     End Function
 
@@ -76,7 +74,7 @@ Public Class clasificación
         DropCaracteristica.Items.Insert(0, New ListItem("--Seleccione Característica--", "0"))
 
     End Sub
-    Protected Sub btnBuscarXCaracteristica_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BCaracteristica.Click
+    Protected Sub BCaracteristica_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BCaracteristica.Click
 
         Dim caracteristicaid As String = Me.DropCaracteristica.SelectedValue.ToString
         Dim caracteristicatext As String = Me.DropCaracteristica.SelectedItem.ToString()
@@ -84,37 +82,27 @@ Public Class clasificación
         GridResultados.DataSource = Rescaracteristica(caracteristicaid)
         GridResultados.DataBind()
     End Sub
+
     Private Function Rescaracteristica(ByVal id As String) As DataSet
         Dim ds As New DataSet
         Dim sqlConn As New SqlConnection
         Dim constr As String = ConfigurationManager.ConnectionStrings("ConnectionString").ConnectionString
         sqlConn.ConnectionString = constr
 
-        'SELECT [nombre], [direccion], [telefono], [pagina_web], [email], [caracteristicas] FROM [lugares] WHERE ([id_caracteristica] = @id_caracteristica)
+        'SELECT [id_lugar], [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_caracteristica] = @id_caracteristica)
 
         Dim sqlCmd As New SqlCommand
-        sqlCmd.CommandText = "SELECT [nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_caracteristica] = @id_caracteristica)"
+        sqlCmd.CommandText = "SELECT [id_lugar],[nombre], [direccion], [telefono], [pagina_web], [email], [clasificacion] FROM [lugares] WHERE ([id_caracteristica] = @id_caracteristica)"
         sqlCmd.Parameters.AddWithValue("@id_caracteristica", id)
         sqlCmd.CommandType = CommandType.Text
         sqlCmd.Connection = sqlConn
-
         Dim sqlAdp As New SqlDataAdapter
         sqlAdp.SelectCommand = sqlCmd
         sqlAdp.Fill(ds)
-
         Return ds
     End Function
-    Protected Sub Button2_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BCaracteristica.Click
-
-
-    End Sub
-
-    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles BEspecialidad.Click
-
-
-    End Sub
-
-    Protected Sub Dropespecialidad_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles Dropespecialidad.SelectedIndexChanged
+   
+    Protected Sub GridResultados_SelectedIndexChanged(ByVal sender As Object, ByVal e As EventArgs) Handles GridResultados.SelectedIndexChanged
 
     End Sub
 End Class
